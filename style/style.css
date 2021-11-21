@@ -113,7 +113,7 @@ nav .net ul li:hover{
     width: 68%;
     margin: 20px 0 150px 0;
 }
-#Home .net .info .btns button{
+#Home .net .info .btns a button{
     font-size: 19px;
     font-weight: 600;
     border-radius: 10px 0 10px;
@@ -121,23 +121,23 @@ nav .net ul li:hover{
     height: 43px;
     font-weight: 600;
 }
-#Home .net .info .btns button a{
+#Home .net .info .btns a{
     color: unset;
-    
+    background-color: unset;
 }
-#Home .net .info .btns > :first-child{
+#Home .net .info .btns :nth-child(1) button{
     background-color: var(--main-color);
     color: #fff;
     border: none;
     margin-right: 15px;
 }
-#Home .net .info .btns > :last-child{
+#Home .net .info .btns :nth-child(2) button{
     background-color: transparent;
     border: 2.5px solid var(--main-color);
     color: var(--main-color);
     transition: calc(var(--maintransition) - .1s);
 }
-#Home .net .info .btns > :last-child:hover{
+#Home .net .info .btns :nth-child(2) button:hover{
     background-color: var(--main-color);
     color: white;
 }
@@ -721,4 +721,23 @@ footer .copyRight p span:last-of-type{
         font-weight: 600;
         font-size: 14px;
     }
+}
+.alerts{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+    /* transform: translateX(-1%); */
+    transform: translateX(100%);
+    transition: var(--maintransition);
+}
+.alerts .alert{
+    width: 50%;
+    display: none !important;
+}
+.alerts :nth-child(2){
+    display: flex !important;
 }
