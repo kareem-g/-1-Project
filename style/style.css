@@ -666,6 +666,9 @@ footer .copyRight p span:last-of-type{
     font-weight: bold;
     cursor: pointer;
 }
+#signup-sec.login .net .form p a{
+    color: #1a2f42;
+}
 #signup-sec .net .form button{
     border: none;
     padding: 10px;
@@ -740,4 +743,8 @@ footer .copyRight p span:last-of-type{
 }
 .alerts :nth-child(2){
     display: flex !important;
+}
+/* Login Page  */
+#signup-sec.login{
+    padding: 100px 0;
 }
