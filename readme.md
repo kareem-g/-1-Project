@@ -1,13 +1,3 @@
-Full Live Preview :
-
-Signup & Login :
-
-Reset Passwd :
-
-User Dashboard :
-
-Admin Dashboard :
-
-How to Setup? 
-
-// incompelete
+# Project2
+## Live Here
+#### https://ahmdgun0.github.io/Project2/
