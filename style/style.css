@@ -84,18 +84,18 @@ nav .net ul li:hover{
     align-items: center;
     width: 50%;
     animation: height ease-in-out 3s infinite;
-    transform: translateY(40px);
+    transform: translateY(20px);
     cursor: pointer;
 }
 @keyframes height {
     0%{
-        transform: translateY(40px)
+        transform: translateY(20px)
     }
     50%{
         transform: translateY(-50px)
     }
     100%{
-        transform: translateY(40px)
+        transform: translateY(20px)
     }
 }
 #Home .net .img img{
@@ -725,26 +725,19 @@ footer .copyRight p span:last-of-type{
         font-size: 14px;
     }
 }
-.alerts{
-    position: absolute;
-    top: 10%;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
-    width: 100%;
-    /* transform: translateX(-1%); */
-    transform: translateX(100%);
-    transition: var(--maintransition);
+input.erorr{
+    border: 1px solid red !important;
+    box-shadow: inset 0 0 3px rgba(255, 0, 0, 0.459),
+                0 0 8px rgba(255, 0, 0, 0.459);
 }
-.alerts .alert{
-    width: 50%;
-    display: none !important;
-}
-.alerts :nth-child(2){
-    display: flex !important;
+input.erorr + p{
+    color: red;
 }
 /* Login Page  */
 #signup-sec.login{
+    padding: 100px 0;
+}
+/* ----- Forget Password ----- */
+#signup-sec.forgetpassword{
     padding: 100px 0;
 }
