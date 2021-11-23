@@ -1268,3 +1268,41 @@ h2.swal2-title  p{
         display: none;
     }
 }
+/* ------ Visited Link ------- */
+#visited .container article{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+#visited .container article h2{
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+#visited .container article img{
+    width: 300px;
+    margin-bottom: 15px;
+}
+#visited .container article button{
+    width: 300px;
+    border-radius: 15px;
+    border: 1px solid #f3f3f3;
+    height: 3.7rem;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    transition: .3s;
+}
+#visited .container article button:hover{
+    background-color: #1079d4;
+}
+@media (max-width:475px) {
+    #visited .container article button,
+    #visited .container article img{
+        width: 100%;
+    }
+}

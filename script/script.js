@@ -54,19 +54,21 @@ password != undefined ? password.forEach(() => validat(password)) : "";
 // Validat Function
 let Send = true; // To Send One Password
 function validat(...password){
-    password[0][0] === '' ? Swal.fire('Error !','Password Is A Required Field','error')
-    : password[0][0].length < 8 ? Swal.fire('Error !','This Password Is Very Short, Chose The Strongest One','error')
-    : password[0][0].length > 25 ? Swal.fire('Error !','This Password Is Very Long, Shorten It','error')
-    : password[0][0] !== password[0][1] ? Swal.fire('Error !','Passwords Is Not Matching','error')
-    : sendResetPass(password[0][0]);
+    let newPassword = password[0][0];
+    let re_Password = password[0][1];
+    newPassword === '' ? Swal.fire('Error !','Password Is A Required Field','error')
+    : newPassword.length < 8 ? Swal.fire('Error !','This Password Is Very Short, Chose The Strongest One','error')
+    : newPassword.length > 25 ? Swal.fire('Error !','This Password Is Very Long, Shorten It','error')
+    : newPassword !== re_Password ? Swal.fire('Error !','Passwords Is Not Matching','error')
+    : sendResetPass(newPassword);
 }
 
 // Send Data Function
-function sendResetPass(password){
+function sendResetPass(newPassword){
     if(Send){
         Swal.fire('Success','Password Has Been Changed.','success');
         Send = false;
-        console.log(password);
+        console.log(newPassword);
         // password => This Send Tp DB
     }
 }

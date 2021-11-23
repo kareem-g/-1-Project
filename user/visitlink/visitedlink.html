@@ -14,7 +14,7 @@
     <!-- Meta Author -->
     <meta name="author" content="FoR3oN">
     <!-- Title -->
-    <title>EgyFaucet - Dashboard</title>
+    <title>EgyFaucet - Visited Link</title>
     <!-- Bottstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Normalize Style -->
@@ -63,8 +63,8 @@
         <section id="left-nav" class="">
             <div class="navigator">
                 <ul>
-                    <a href="dashboard.html">
-                        <li class="acctive" data-info="Dashboard">
+                    <a href="../dashboard/dashboard.html">
+                        <li data-info="Dashboard">
                             <i class="fas fa-th-large"></i>
                         </li>
                     </a>
@@ -73,8 +73,8 @@
                             <i class="far fa-usd-circle"></i>
                         </li>
                     </a>
-                    <a href="../visitlink/visitedlink.html">
-                        <li data-info="Visited link">
+                    <a href="visitedlink.html">
+                        <li class="acctive" data-info="Visited link">
                             <i class="fas fa-link"></i>
                         </li>
                     </a>
@@ -101,8 +101,8 @@
                 </ul>
             </div>
         </section>
-    <!-- -------- Dash Board -------- -->
-        <section id="dashBoard" class="dashBoard">
+    <!-- -------- Visited Link -------- -->
+        <section id="dashBoard" class="visited">
             <div class="container">
                 <section id="statistics">
                     <div class="container">
@@ -139,31 +139,13 @@
                         </div>
                     </div>
                 </section>
-                <section id="referrals">
+                <section id="visited">
                     <div class="container">
-                        <h2>Referrals</h2>
-                        <div class="info">
-                            <p>You Can Earn Up To 15% From Every Friend You Invited Throught Your Referral Link</p>
-                            <img src="../../img/More/44.png" alt="">
-                            <div class="input">
-                                <input type="text" readonly value="https://www.EgyFouset.com/AhmedAshraf">
-                                <button>
-                                    <span>Copied</span>
-                                    <span></span>
-                                    Copy
-                                </button>
-                            </div>
-                            <div class="imgs">
-                                <div class="img">
-                                    <img src="../../img/More/HomeSec.png" alt="">
-                                    <img src="../../img/More/HomeSec.png" alt="">
-                                    <img src="../../img/More/HomeSec.png" alt="">
-                                    <img src="../../img/More/HomeSec.png" alt="">
-                                    <img src="../../img/More/HomeSec.png" alt="">
-                                </div>
-                                <p>Invite Youre Friends Now !</p>
-                            </div>
-                        </div>
+                        <article>
+                            <h2>Visited Link</h2>
+                            <img src="../../img/More/statc1.png" alt="">
+                            <button>Open Link</button>
+                        </article>
                     </div>
                 </section>
             </div>
@@ -184,7 +166,7 @@
                     <p>links</p>
                     <ul>
                         <li>
-                            <a href="dashboard.html">
+                            <a href="../dashboard/dashboard.html">
                                 Dashboard
                             </a>
                         </li>
@@ -215,6 +197,8 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Bootstrap JS File -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Visited Link Js File  -->
+    <script src="../../script/visitScript.js"></script>
     <!-- Main JS File -->
     <script src="../../script/script.js"></script>
 </body>
