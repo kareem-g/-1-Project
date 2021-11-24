@@ -1468,3 +1468,81 @@ h2.swal2-title  p{
         display: none;
     }
 }
+/* ----- Links Page ----- */
+#linksPage .net{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    padding-inline: 5%;
+    padding-bottom: 50px;
+}
+#linksPage .net article{
+    margin: 20px;
+    padding: 10px 10px 30px;
+}
+#linksPage .net article img{
+    width: 100%;
+}
+#linksPage .net article p{
+    font-size: 18px;
+    text-align: center;
+    margin: 8px 0 10px;
+    font-weight: 600;
+    cursor: default;
+}
+#linksPage .net article p span{
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 19px;
+    cursor: pointer;
+}
+#linksPage .net article p span:hover{
+    text-decoration: underline;
+}
+#linksPage .net article label{
+    margin-bottom: 15px;
+    color: #292626;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+#linksPage .net article input{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    caret-color: var(--main-color);
+}
+#linksPage .net article button{
+    border-radius: 10px;
+    border: 1px solid #2183da;
+    background-color: var(--main-color);
+    color: white;
+    width: 100px;
+    transition: var(--maintransition);
+    outline: none;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+#linksPage .net article button:hover{
+    background-color: #2183da;
+}
+@media(max-width:850px){
+    #linksPage .net{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:450px){
+    #linksPage .net{
+        grid-template-columns: 1fr;
+    }
+}
