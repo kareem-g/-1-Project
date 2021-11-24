@@ -1280,12 +1280,14 @@ h2.swal2-title  p{
     padding-bottom: 50px;
 }
 #visited .container article h2,
-#captcha .container article h2{
+#captcha .container article h2,
+#withdrawl .container #added h2{
     margin-bottom: 40px;
     font-weight: bold;
 }
 #visited .container article img,
-#captcha .container article img{
+#captcha .container article img,
+#withdrawl .container #added img{
     width: 300px;
     margin-bottom: 15px;
 }
@@ -1366,4 +1368,103 @@ h2.swal2-title  p{
 .swal2-actions button{
     font-size: 21px;
     padding: 15px;
+}
+/* -------- Withdrawl -------- */
+#withdrawl .container #added{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#withdrawl .container #added .big-input{
+    width: 100%;
+    text-align: center;
+}
+#withdrawl .container #added .big-input label{
+    margin-bottom: 13px;
+    color: #999999;
+    font-weight: 600;
+}
+#withdrawl .container #added .big-input input,
+#withdrawl .container #added .big-input button{
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+    border: 2px solid transparent;
+}
+#withdrawl .container #added .big-input input{
+    width: 35%;
+    margin-right: -5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+    caret-color: var(--main-color);
+}
+#withdrawl .container #added .big-input button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--main-color);
+    color: white;
+    width: 100px;
+    transition: var(--maintransition);
+}
+#withdrawl .container #added .big-input button:hover{
+    background-color: #2183da;
+}
+#withdrawl .container #table h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#withdrawl .container #table table,
+#withdrawl .container #table table tr{
+    border: 2px solid #f7f7f7;
+    font-weight: 700;
+}
+#withdrawl .container #table table{
+    width: 100%;
+    margin-bottom: 60px;
+}
+#withdrawl .container #table table td{
+    text-align: center;
+    padding: 12px;
+}
+#withdrawl .container #table table td:first-of-type{
+    color: var(--main-color);
+}
+#withdrawl .container #table table td:nth-of-type(2){
+    color: #999898;
+}
+#withdrawl .container #table table td:last-of-type.done{
+    color: #23d1a0;
+}
+#withdrawl .container #table table td:last-of-type.Reviewed{
+    color: #db9a28;
+}
+#withdrawl .container #table table td:last-of-type.Rejected{
+    color: rgb(212, 20, 20);
+}
+@media(max-width:600px){
+    #withdrawl .container #added .big-input button{
+        margin-top: 20px;
+    }
+    #withdrawl .container #added .big-input input,
+    #withdrawl .container #added .big-input button{
+        width: 100%;
+        margin-right: 0;
+        border-radius: 10px;
+    }
+    #withdrawl .container #added img{
+        width: 50%;
+    }
+}
+@media(max-width:400px){
+    #withdrawl .container #table h2{
+        font-size: 20px;
+    }
+    #withdrawl .container #table table td:nth-of-type(2){
+        display: none;
+    }
 }

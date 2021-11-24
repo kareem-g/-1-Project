@@ -68,8 +68,8 @@ function sendResetPass(newPassword){
     if(Send){
         Swal.fire('Success','Password Has Been Changed.','success');
         Send = false;
-        console.log(newPassword);
-        // password => This Send Tp DB
+        console.log(newPassword); // => Dont Touch Any - newPassword Is Finshed Value <=
+                                  // password => This Send Tp DB
     }
 }
 // Get POP up
