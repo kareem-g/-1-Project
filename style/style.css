@@ -1546,3 +1546,172 @@ h2.swal2-title  p{
         grid-template-columns: 1fr;
     }
 }
+/* --- Admin Dashbord -----  */
+#Admin .nett{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+#Admin .nett article{
+    padding: 10px;
+}
+#Admin .nett article > p{
+    font-size: 23px;
+    color: #999999;
+    font-weight: 600px;
+    margin: 10px;
+}
+#Admin .nett article > p span{
+    color: var(--main-color);
+    font-weight: 700;
+}
+#Admin .nett article > img{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+#Admin .nett .addLink label,
+#Admin .nett .bouns .input label{
+    padding-inline: 10px;
+    margin-top: 5px;
+}
+#Admin .nett .addLink input,
+#Admin .nett .bouns .input input{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #f3f3f3;
+    outline: none;
+    background-color: #f3f3f3;
+    caret-color: var(--main-color);
+}
+#Admin .nett .addLink button,
+#Admin .nett .bouns .input button{
+    outline: none;
+    border: none;
+    width: 85%;
+    font-size: 18px;
+    margin: 20px auto 30px;
+    display: block;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    transition: var(--maintransition);
+}
+#Admin .nett .addLink button:hover,
+#Admin .nett .bouns .input button:hover{
+    background-color: #2183da;
+}
+#Admin .nett .addLink .tap{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#Admin .nett .addLink .tap .col{
+    display: grid;
+    grid-template-columns: 1fr .25fr;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid #999999;
+    padding: 10px;
+}
+#Admin .nett .addLink .tap .col p{
+    margin: 0;
+    font-size: 19px;
+}
+#Admin .nett .addLink .tap .col p:nth-of-type(1){
+    color: var(--main-color);
+}
+#Admin .nett .addLink .tap .col p:nth-of-type(2){
+    cursor: pointer;
+    color: red;
+}
+/* Bouns  */
+#Admin .nett .bouns .input label{
+    margin: 5px;
+}
+/* Withdrawl table */
+#Admin #tableRequests{
+    margin-bottom: 30px;
+}
+#Admin #tableRequests h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#Admin #tableRequests .col{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #999999;
+    padding: 10px;
+}
+#Admin #tableRequests .col p{
+    font-size: 19px;
+    margin: 0;
+    width: calc(100% / 3);
+    text-align: center;
+    font-weight: bold;
+}
+#Admin #tableRequests .col p:nth-of-type(2){
+    color: var(--main-color);
+    font-weight: bold;
+}
+#Admin #tableRequests .col p:nth-of-type(3){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline: 30px;
+}
+#Admin #tableRequests .col p:nth-of-type(3) span:nth-of-type(1){
+    color: green;
+    cursor: pointer;
+}
+#Admin #tableRequests .col p:nth-of-type(3) span:nth-of-type(2){
+    color: red;
+    cursor: pointer;
+}
+/* --- Responsev Admin ----  */
+@media (max-width: 1000px) {
+    #Admin .nett{
+        grid-template-columns: 100%;
+    }
+    #net #dashBoard{
+        padding: 0;
+    }
+}
+@media (max-width: 767px) {
+    #Admin #tableRequests .col p:nth-of-type(3){
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
+}
+@media (max-width: 500px){
+    #Admin .nett .addLink .tap .col{
+        grid-template-columns: 100%;
+        grid-gap: 15px;
+        padding: 10px 0;
+    }
+    #Admin .nett .addLink .tap .col p:first-of-type{
+        width: 90%;
+        word-wrap: break-word;
+        font-size: 16px;
+        margin: auto;
+        line-height: 30px;
+    }
+    #Admin .nett .addLink .tap .col p:last-of-type{
+        border-top: 1px solid red;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 400px) {
+    #Admin #tableRequests .col p{
+        font-weight: normal;
+        font-size: 17px;
+    }
+}
