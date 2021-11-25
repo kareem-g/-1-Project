@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Font Awsome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Aos Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Main Style File -->
     <link rel="stylesheet" href="style/style.css">
     <!-- Icon -->
@@ -76,18 +78,18 @@
             <div class="info">
                 <h2>How To Earn</h2>
                 <p>get paid in 3 easy steps!</p>
-                <p><span>EgyFaucet</span> makes you To Make A money out of more than method</p>
+                <p data-aos="fade-right"><span>EgyFaucet</span> makes you To Make A money out of more than method</p>
             </div>
             <div class="net">
-                <article>
+                <article data-aos="fade-right">
                     <img src="img/More/earn1.png" alt="">
                     <p>Via solve captcha</p>
                 </article>
-                <article>
+                <article data-aos="flip-left">
                     <img src="img/More/earn2.png" alt="">
                     <p>Via referral link</p>
                 </article>
-                <article>
+                <article data-aos="fade-left">
                     <img src="img/More/earn3.png" alt="">
                     <p>Via short links</p>
                 </article>
@@ -98,15 +100,15 @@
     <section id="Why">
         <div class="container">
             <div class="net">
-                <div class="img">
+                <div class="img" data-aos="flip-left">
                     <img src="img/More/why.png" alt="">
                 </div>
                 <div class="info">
-                    <h2>Why <span>EgyFaucet?</span></h2>
+                    <h2 data-aos="zoom-out">Why <span>EgyFaucet?</span></h2>
                     <ul>
-                        <li>Easy steps to start earning</li>
-                        <li>Low minimum payout</li>
-                        <li>Support 24/7</li>
+                        <li data-aos="fade-right">Easy steps to start earning</li>
+                        <li data-aos="fade-left">Low minimum payout</li>
+                        <li data-aos="fade-right">Support 24/7</li>
                     </ul>
                 </div>
             </div>
@@ -115,19 +117,21 @@
     <!-- ------- Statistics ------- -->
     <section id="Statistics">
         <div class="container">
-            <h2>Statistics</h2>
+            <h2 data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">Statistics</h2>
             <div class="net">
-                <article>
+                <article data-aos="fade-right">
                     <img src="img/More/statc1.png" alt="">
                     <p>+1,500,000</p>
                     <p>viewed ads daily</p>
                 </article>
-                <article>
+                <article data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                     <img src="img/More/statc2.png" alt="">
                     <p>500,000</p>
                     <p>Total Payed (SHIB)</p>
                 </article>
-                <article>
+                <article data-aos="fade-left">
                     <img src="img/More/statc.png" alt="">
                     <p>+900,000</p>
                     <p>Registered Users</p>
@@ -140,18 +144,19 @@
         <div class="container">
             <div class="net">
                 <div class="form">
-                    <h2>Contact Us</h2>
+                    <h2 data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">Contact Us</h2>
                     <form autocomplete="off">
-                        <label for="name">Name</label>
-                        <input id="name" type="text" maxlength="10">
-                        <label for="email">Email</label>
-                        <input id="email" type="email">
-                        <label for="msg">Massage</label>
-                        <textarea id="msg"></textarea>
-                        <button type="submit">Send</button>
+                        <label for="name" data-aos="fade-right">Name</label>
+                        <input id="name" type="text" maxlength="10" data-aos="fade-left">
+                        <label for="email" data-aos="fade-right">Email</label>
+                        <input id="email" type="email" data-aos="fade-left">
+                        <label for="msg" data-aos="fade-right">Massage</label>
+                        <textarea id="msg" data-aos="fade-left"></textarea>
+                        <button type="submit" data-aos="fade-up">Send</button>
                     </form>
                 </div>
-                <div class="img">
+                <div class="img" data-aos="flip-left">
                     <img src="img/More/contact.png" alt="">
                 </div>
             </div>
@@ -164,8 +169,8 @@
                 <div class="col11">
                     <p>Follow us on</p>
                     <ul>
-                        <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://web.facebook.com/EgyFouset-108574488323374/?ref=pages_you_manage"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/EgyFouset"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
                 <div class="col22">
@@ -189,6 +194,8 @@
     </footer>
     <!-- Bootstrap JS File -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Aos JS File -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Main JS File -->
     <script src="script/script.js"></script>
 </body>

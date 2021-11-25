@@ -1,3 +1,8 @@
+// Axios 
+AOS.init({
+    offset: 200,
+});
+
 const scrolling = document.querySelectorAll("[data-scroll]");
 
 // Scrooling To
